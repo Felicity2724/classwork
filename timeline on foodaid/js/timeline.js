@@ -129,7 +129,7 @@
 
     var labelBullet = series.bullets.push(new am4charts.LabelBullet());
     labelBullet.label.text = "{text}";
-    labelBullet.label.fontSize = 14;
+    labelBullet.label.fontSize = 13;
     labelBullet.label.maxWidth = 250;
     labelBullet.label.wrap = true;
     labelBullet.label.truncate = false;
