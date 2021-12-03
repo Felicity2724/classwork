@@ -98,7 +98,7 @@
     }];
 
     var yAxis = chart.yAxes.push(new am4charts.ValueAxis());
-    yAxis.min = 0;
+    yAxis.min = -1;
     yAxis.max = 4;
     yAxis.strictMinMax = true;
     yAxis.renderer.grid.template.disabled = true;
@@ -129,7 +129,7 @@
 
     var labelBullet = series.bullets.push(new am4charts.LabelBullet());
     labelBullet.label.text = "{text}";
-    labelBullet.label.fontSize = 13;
+    labelBullet.label.fontSize = 14;
     labelBullet.label.maxWidth = 250;
     labelBullet.label.wrap = true;
     labelBullet.label.truncate = false;
@@ -149,7 +149,7 @@
     title.text = "Timeline for food-aid in Hong Kong during COVID-19";
     title.fontSize = 30;
     title.fontFamily="Roboto Condensed"
-    title.marginTop = 15;
+    title.marginTop = 10;
     title.marginBottom = 1;
 
 });
