@@ -98,7 +98,7 @@
     }];
 
     var yAxis = chart.yAxes.push(new am4charts.ValueAxis());
-    yAxis.min = -1;
+    yAxis.min = 0;
     yAxis.max = 4;
     yAxis.strictMinMax = true;
     yAxis.renderer.grid.template.disabled = true;
@@ -129,11 +129,12 @@
 
     var labelBullet = series.bullets.push(new am4charts.LabelBullet());
     labelBullet.label.text = "{text}";
+    labelBullet.label.fontSize = 14;
     labelBullet.label.maxWidth = 250;
     labelBullet.label.wrap = true;
     labelBullet.label.truncate = false;
     labelBullet.label.textAlign = "middle";
-    labelBullet.label.padding(20, 20, 20, 20)
+    labelBullet.label.padding(10, 10, 10, 10)
     labelBullet.label.fill = am4core.color("#999");
     labelBullet.label.background.fill = series.fill;
     labelBullet.label.background.fillOpacity = 0.1;
