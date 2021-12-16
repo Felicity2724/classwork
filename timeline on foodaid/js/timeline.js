@@ -22,7 +22,7 @@
     chart.data = [{
     "x": "1",
     "y": 3,
-    "text": "[bold]2020 Mar 4[/]\nShort-term Food Assistance Service by Hong Kong Sheng Kung Hui Welfare Council.",
+    "text":"[bold]2020 Mar 4[/]\n" + 'Short-term Food Assistance Service by Hong Kong Sheng Kung Hui Welfare Council',
     "center": "bottom"
     }, {
     "x": "2",
@@ -38,7 +38,7 @@
     "x": "4",
     "y": 3,
     "text": "[bold]2020 Sep 3[/]\nShort-term Food Assistance Service by Po Leung Kuk.",
-    "center": "top"
+    "center": "bottom"
     }, {
     "x": "4",
     "y": 2,
@@ -53,7 +53,7 @@
     "x": "2",
     "y": 2,
     "text": "[bold]2020 Sep 17[/]\nHot Meal Service by Food for Good.",
-    "center": "top"
+    "center": "bottom"
     }, {
     "x": "1",
     "y": 2,
@@ -121,7 +121,7 @@
     var bullet = series.bullets.push(new am4charts.CircleBullet());
     bullet.circle.radius = 5;
     bullet.fill = am4core.color("#77969A");
-   
+    
 
     bullet.setStateOnChildren = true;
     bullet.states.create("hover");
@@ -142,6 +142,7 @@
     labelBullet.setStateOnChildren = true;
     labelBullet.states.create("hover").properties.scale = 1.2;
     labelBullet.label.states.create("hover").properties.fill = am4core.color("#EBB471");
+
 
     labelBullet.label.propertyFields.verticalCenter = "center";
 
