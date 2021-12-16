@@ -98,7 +98,7 @@
     }];
 
     var yAxis = chart.yAxes.push(new am4charts.ValueAxis());
-    yAxis.min = -1;
+    yAxis.min = 0;
     yAxis.max = 4;
     yAxis.strictMinMax = true;
     yAxis.renderer.grid.template.disabled = true;
@@ -154,3 +154,4 @@
     title.marginBottom = 1;
 
 });
+
